@@ -1,7 +1,8 @@
-from sklearn.metrics import accuracy_score, classification_report
+from sklearn.metrics import mean_squared_error, r2_score
 
 def evaluate_model(model, X_test, y_test):
-    """Evaluate the model with accuracy score and classification report."""
     predictions = model.predict(X_test)
-    print("Accuracy:", accuracy_score(y_test, predictions))
-    print(classification_report(y_test, predictions))
+    mse = mean_squared_error(y_test, predictions)
+    r2 = r2_score(y_test, predictions)
+    print("MSE:", mse)
+    print("R^2:", r2)

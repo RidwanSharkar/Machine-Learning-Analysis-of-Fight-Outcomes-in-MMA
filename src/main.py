@@ -1,41 +1,32 @@
 from data import load_data, preprocess_data
 from features import engineer_features
-from model import train_model, predict
+from model import train_model
 from evaluate import evaluate_model
 import pandas as pd
+import numpy as np
 
 def main():
-    # Define file paths for the datasets
-    filepath_data = 'C:\\Users\\Lenovo\\Desktop\\MMA-Predictive-Analysis\\data\\masterdataframe.csv'
     filepath_ml_data = 'C:\\Users\\Lenovo\\Desktop\\MMA-Predictive-Analysis\\data\\masterMLpublic.csv'
-
-    # Load datasets
-    data = load_data(filepath_data)
     ml_data = load_data(filepath_ml_data)
 
-    # Check if data is loaded
-    if data is None or ml_data is None:
+    if ml_data is None:
         print("Data loading failed. Exiting program.")
         return
 
-    # Preprocess both datasets
-    data = preprocess_data(data)
+    print("DataFrame columns:", ml_data.columns)
+
     ml_data = preprocess_data(ml_data)
+    ml_data = engineer_features(ml_data)
 
-    # Merge datasets on a common key, assuming 'fighter' is the common key
-    combined_data = pd.merge(data, ml_data, on='fighter', how='inner')
+    target_column = 'result' 
+    if target_column not in ml_data.columns:
+        print(f"Target column '{target_column}' not found.")
+        return
 
-    # Feature engineering
-    combined_data = engineer_features(combined_data)
+    X = ml_data.drop([target_column], axis=1)
+    Y = ml_data[target_column]
 
-    # Prepare data for model training
-    X = combined_data.drop(['result'], axis=1)
-    y = combined_data['result']
-
-    # Train the model
-    model, X_train, X_test, y_train, y_test = train_model(X, y)
-
-    # Evaluate the model
+    model, X_train, X_test, y_train, y_test = train_model(X, Y)
     evaluate_model(model, X_test, y_test)
 
 if __name__ == '__main__':

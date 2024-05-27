@@ -1,14 +1,19 @@
 from sklearn.preprocessing import StandardScaler
+import pandas as pd
+import numpy as np
 
 def engineer_features(df):
-    """Create new features and scale numeric features."""
-    # Assuming existing functions like add_age_at_fight() and calculate_experience() are already defined and imported
-    df = add_age_at_fight(df)
-    df = calculate_experience(df)
-
-    # Scale numeric features
-    numeric_cols = df.select_dtypes(include=['float64', 'int']).columns
     scaler = StandardScaler()
+
+    if 'dob' in df.columns and 'fight_date' in df.columns:
+        df['dob'] = pd.to_datetime(df['dob'])
+        df['fight_date'] = pd.to_datetime(df['fight_date'])
+        df['age_at_fight'] = (df['fight_date'] - df['dob']).dt.days / 365.25
+        df.drop(['dob', 'fight_date'], axis=1, inplace=True)
+
+    numeric_cols = df.select_dtypes(include=['int', 'float']).columns
     df[numeric_cols] = scaler.fit_transform(df[numeric_cols])
+    
+    df = df.select_dtypes(include=[np.number])
 
     return df
