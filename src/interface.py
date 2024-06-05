@@ -4,11 +4,9 @@ def load_data(filepath):
     return pd.read_csv(filepath)
 
 def find_fighter_stats(df, fighter_name):
-    #Search
     fighter_data = df[df['fighter'].str.lower() == fighter_name.lower()]
-    days_since_col = 'days_since_last_comp' if 'days_since_last_comp' in df.columns else None #debug*
+    days_since_col = 'days_since_last_comp' if 'days_since_last_comp' in df.columns else None
 
-    # Sum Columns
     stats = {
         
         'Fighter: ': fighter_name,
@@ -25,7 +23,7 @@ def find_fighter_stats(df, fighter_name):
         'Submission Attempts: ': fighter_data['sub_attempts'].sum(),
         'Reversals: ': fighter_data['reversals'].sum(),
         'Control Time: ': fighter_data['control'].sum(),
-        'KO Losses: ': (fighter_data['result'] == 'KO').sum(),  #HMM
+        'KO Losses: ': (fighter_data['result'] == 'KO').sum(),  # Assuming 'result' column has KO as a loss marked
         'Total Number of Fights: ': fighter_data.shape[0],
         'Total Competition Time: ': fighter_data['total_comp_time'].sum(),
         'Days Since Last Competition: ': fighter_data.iloc[-1][days_since_col] if not fighter_data.empty and days_since_col else 'Unknown',  # last row in data
@@ -61,7 +59,6 @@ def find_fighter_stats(df, fighter_name):
         #'win_streak': max(fighter_data['win_streak']) if not fighter_data.empty else 0,
         #'win_loss_ratio': (fighter_data['result'] == 'win').sum() / fighter_data['result'].count() if fighter_data['result'].count() > 0 else 0,
     }
-    
     return stats
 
 def main():
