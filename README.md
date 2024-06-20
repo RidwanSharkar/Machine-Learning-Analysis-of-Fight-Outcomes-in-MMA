@@ -1,16 +1,17 @@
 **Predictive Analysis of Fight Outcomes in Mixed Martial Arts Using Machine Learning**
+________________________________________________________________________________________________________________
 
 OVERVIEW:
 
 This project attempts to predict the outcomes of MMA fights based on a diverse set of attributes sourced from historical fight data, consisting of fighter statistics, historical performance, physical attributes, and fighting styles to train a predictive model based on Random Forest. The goal is to see if an accurate prediction of a novel fight can be determined from a vast set of fighter attributes. 
 
-====================================================
+________________________________________________________________________________________________________________
 
-IMPLEMENTATION 1:
+[IMPLEMENTATION 1]
+ASSIGNING ATTRIBUTE WEIGHTS DETERMINANT TO FIGHT OUTCOME
 
 Data set taken from (https://www.kaggle.com/datasets/danmcinerney/mma-differentials-and-elo {masterMLpublic.csv}) contains comprehensive historical fight data scraped from the official ufcstats.com. For each fight (row), attributes (columns) such as 'age', 'reach', 'height', 'significant strikes landed', 'knockdowns', 'submission attempts', 'reversals', 'control time', 'takedowns attempted', and 'time since last competition' are recorded. Differential calculations are performed on these attributes between the fighter and their opponent, revealing more valuable & relevant metrics, which are then suitable to be fed through various Machine Learning algorithms:
 
-====================================================
 
 'precomp_age_differential',
 'precomp_height_differential',
@@ -141,7 +142,7 @@ Data set taken from (https://www.kaggle.com/datasets/danmcinerney/mma-differenti
 'precomp_avg_comp_time_differential',
 ...+40
 
-====================================================
+________________________________________________________________________________________________________________
 
 The following Machine Learning Models are then used to assign weights to the above attributes WRT predicting the outcome of a fight ('result' column):
 
@@ -157,9 +158,10 @@ Results and discrepencies between how these these ML models assigned their weigh
 
 "Attribute Weights for Predicting Fight Outcome by Machine Learning Model.pdf" attached
 
-====================================================
+________________________________________________________________________________________________________________
 
-IMPLEMENTATION 2:
+[IMPLEMENTATION 2]
+PREDICTING HYPOTHETICAL FIGHT BETWEEN 2 FIGHTERS
 
 This program then takes 2 fighter input names, and averages & standardizes both of their career stats for each of the relevant attributes that the ML model is learning from. The availablity & obtainability of these relevant fighter stats leads to how the attributes are chosen in the previous implementation, allowing for a flexible and symmetric way to compare 2 fighters. 
 Each Machine learning model is then able to take this novel input of 2 fighters and attempts to predict a winner in a hypothetical fight between them. 
