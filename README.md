@@ -9,7 +9,8 @@ IMPLEMENTATION 1:
 
 Data set taken from (https://www.kaggle.com/datasets/danmcinerney/mma-differentials-and-elo {masterMLpublic.csv}) contains comprehensive historical fight data scraped from the official ufcstats.com. For each fight (row), attributes (columns) such as 'age', 'reach', 'height', 'significant strikes landed', 'knockdowns', 'submission attempts', 'reversals', 'control time', 'takedowns attempted', and 'time since last competition' are recorded. Differential calculations are performed on these attributes between the fighter and their opponent, revealing more valuable & relevant metrics, which are then suitable to be fed through various Machine Learning algorithms:
 
-===========================================================
+==========================
+
 'precomp_age_differential',
 'precomp_height_differential',
 'precomp_days_since_last_comp_differential',
@@ -137,11 +138,9 @@ Data set taken from (https://www.kaggle.com/datasets/danmcinerney/mma-differenti
 'precomp_sub_absorbed_differential',
 'precomp_comp_time_differential',
 'precomp_avg_comp_time_differential',
-#--------------ACCURACY---------------
-...+20
-#---------------LANDED----------------
-...+20
-===========================================================
+...+40
+
+==========================
 
 
 The following Machine Learning Models are then used to assign weights to the above attributes FOR predicting the outcome of a fight:
