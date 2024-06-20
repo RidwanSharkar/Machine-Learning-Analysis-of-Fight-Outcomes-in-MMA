@@ -154,7 +154,8 @@ The following Machine Learning Models are then used to assign weights to the abo
 7) Decision Tree Classifier
 
 Results and discrepencies between how these these ML models assigned their weights are described in: 
-"Attribute Weights for Predicting Fight Outcome by Machine Learning Model.pdf"
+
+"Attribute Weights for Predicting Fight Outcome by Machine Learning Model.pdf" attached
 
 ====================================================
 
