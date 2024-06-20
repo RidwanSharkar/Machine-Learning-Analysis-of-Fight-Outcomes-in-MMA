@@ -143,10 +143,10 @@ Data set taken from (https://www.kaggle.com/datasets/danmcinerney/mma-differenti
 
 ====================================================
 
-The following Machine Learning Models are then used to assign weights to the above attributes FOR predicting the outcome of a fight:
+The following Machine Learning Models are then used to assign weights to the above attributes WRT predicting the outcome of a fight ('result' column):
 
 1) Random Forest Classifier
-2) Gradient Boostin Classifier
+2) Gradient Boosting Classifier
 3) Support Vector Machine
 4) Logistic Regression
 5) K-Neighbors Classifier
