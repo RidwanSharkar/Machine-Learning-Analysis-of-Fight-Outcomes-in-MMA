@@ -166,8 +166,8 @@ ________________________________________________________________________________
 
 PREDICTING A NOVEL HYPOTHETICAL FIGHT BETWEEN 2 FIGHTERS
 
-This program then takes 2 fighter input names, and averages & standardizes both of their career stats for each of the relevant attributes that the ML model is learning from. The availablity & obtainability of these relevant fighter stats leads to how the attributes are chosen in the previous implementation, allowing for a flexible and symmetric way to compare 2 fighters. 
-Each Machine learning model is then able to take this novel input of 2 fighters and attempts to predict a winner in a hypothetical fight between them. 
+This program then takes 2 fighter input names, and averages & standardizes both of their career stats for each of the relevant attributes that the ML model is learning from. The availablity & symmetry of these relevant fighter stats are crucial for how the attributes were originally chosen for the machine learning step, thus permitting a flexible way to compare 2 fighters. 
+Each Machine Learning Model is then able to take this 2 fighter input and attempts to predict and display the winner of a hypothetical fight between them, along with its level of certainty with this prediction.  
 
 
 
