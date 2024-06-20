@@ -4,12 +4,13 @@ OVERVIEW:
 
 This project attempts to predict the outcomes of MMA fights based on a diverse set of attributes sourced from historical fight data, consisting of fighter statistics, historical performance, physical attributes, and fighting styles to train a predictive model based on Random Forest. The goal is to see if an accurate prediction of a novel fight can be determined from a vast set of fighter attributes. 
 
+====================================================
 
 IMPLEMENTATION 1:
 
 Data set taken from (https://www.kaggle.com/datasets/danmcinerney/mma-differentials-and-elo {masterMLpublic.csv}) contains comprehensive historical fight data scraped from the official ufcstats.com. For each fight (row), attributes (columns) such as 'age', 'reach', 'height', 'significant strikes landed', 'knockdowns', 'submission attempts', 'reversals', 'control time', 'takedowns attempted', and 'time since last competition' are recorded. Differential calculations are performed on these attributes between the fighter and their opponent, revealing more valuable & relevant metrics, which are then suitable to be fed through various Machine Learning algorithms:
 
-==========================
+====================================================
 
 'precomp_age_differential',
 'precomp_height_differential',
@@ -140,8 +141,7 @@ Data set taken from (https://www.kaggle.com/datasets/danmcinerney/mma-differenti
 'precomp_avg_comp_time_differential',
 ...+40
 
-==========================
-
+====================================================
 
 The following Machine Learning Models are then used to assign weights to the above attributes FOR predicting the outcome of a fight:
 
@@ -156,7 +156,7 @@ The following Machine Learning Models are then used to assign weights to the abo
 Results and discrepencies between how these these ML models assigned their weights are described in: 
 "Attribute Weights for Predicting Fight Outcome by Machine Learning Model.pdf"
 
-
+====================================================
 
 IMPLEMENTATION 2:
 
