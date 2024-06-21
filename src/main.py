@@ -1,4 +1,5 @@
 from sklearn.ensemble import RandomForestClassifier
+from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, classification_report
 from sklearn.preprocessing import StandardScaler
@@ -233,8 +234,6 @@ def get_fighter_data(fighter_name, df):
 
 def make_fight_prediction(fighter1_data, fighter2_data, feature_columns, model):
     differential_data = fighter1_data - fighter2_data
-    print("Shape of differential data:", differential_data.shape)
-    print("Number of columns expected:", len(feature_columns))
 
     fight_input = pd.DataFrame([differential_data], columns=feature_columns)
     probability = model.predict_proba(fight_input)[0]
@@ -271,7 +270,7 @@ def main():
     print(len(global_feature_columns))
 
     #TRAIN
-    model = RandomForestClassifier(n_estimators=100, random_state=42)
+    model = GradientBoostingClassifier(n_estimators=100, learning_rate=0.1, max_depth=3, random_state=42)
     model.fit(X_train, Y_train)
     display_feature_importance(model, X_train.columns)
 

@@ -8,7 +8,6 @@ def find_fighter_stats(df, fighter_name):
     days_since_col = 'days_since_last_comp' if 'days_since_last_comp' in df.columns else None
 
     stats = {
-        
         'Fighter: ': fighter_name,
         'Record: ': fighter_data['method'].value_counts().to_dict(),
         'List of Opponents:': list(fighter_data['opponent'].unique()),
