@@ -1,4 +1,4 @@
-**Predictive Analysis of Fight Outcomes in Mixed Martial Arts Using Machine Learning**
+![image](https://github.com/RidwanSharkar/Predictive-Analysis-of-MMA-Fights/assets/158855066/2691816a-f74d-44d2-9301-24eed4981466)**Predictive Analysis of Fight Outcomes in Mixed Martial Arts Using Machine Learning**
 ________________________________________________________________________________________________________________
 
 OVERVIEW:
@@ -82,67 +82,7 @@ ________________________________________________________________________________
 'precomp_total_clinch_strikes_absorbed_differential',
 'precomp_avg_sub_attempts_per_min_differential',
 'precomp_total_sig_strikes_absorbed_differential',
-'precomp_total_leg_strikes_absorbed_differential',
-'precomp_avg_win_loss_ratio_differential',
-'precomp_sig_strikes_absorbed_differential',
-'precomp_avg_total_leg_strikes_absorbed_differential',
-'precomp_avg_sig_strikes_landed_per_min_differential',
-'precomp_avg_sub_def_differential',
-'precomp_leg_strikes_attempts_per_min_differential',
-'precomp_avg_total_sig_strikes_absorbed_differential',
-'precomp_total_total_strikes_absorbed_differential',
-'precomp_total_strikes_landed_per_min_differential',
-'precomp_distance_strikes_absorbed_differential',
-'precomp_stamina_differential',
-'precomp_avg_total_total_strikes_absorbed_differential',
-'precomp_avg_total_takedowns_absorbed_differential',
-'precomp_total_strikes_absorbed_differential',
-'precomp_avg_takedowns_absorbed_differential',
-'precomp_avg_sig_strikes_attempts_per_min_differential',
-'precomp_total_strikes_attempts_per_min_differential',
-'precomp_total_body_strikes_absorbed_differential',
-'precomp_avg_win_streak_differential',
-'precomp_clinch_strikes_landed_per_min_differential',
-'precomp_ground_strikes_def_differential',
-'precomp_avg_total_ground_strikes_absorbed_differential',
-'precomp_leg_strikes_landed_per_min_differential',
-'precomp_total_ground_strikes_absorbed_differential',
-'precomp_takedowns_def_differential',
-'precomp_clinch_strikes_def_differential',
-'precomp_sig_strikes_landed_per_min_differential',
-'precomp_sig_strikes_attempts_per_min_differential',
-'precomp_distance_strikes_landed_per_min_differential',
-'precomp_takedowns_attempts_per_min_differential',
-'precomp_ground_strikes_attempts_per_min_differential',
-'precomp_body_strikes_absorbed_differential',
-'precomp_avg_KO_losses_differential',
-'precomp_leg_strikes_absorbed_differential',
-'precomp_leg_strikes_def_differential',
-'precomp_ground_strikes_landed_per_min_differential',
-'precomp_total_takedowns_absorbed_differential',
-'precomp_avg_lose_streak_differential',
-'precomp_clinch_strikes_absorbed_differential',
-'precomp_takedowns_landed_per_min_differential',
-'precomp_ground_strikes_absorbed_differential',
-'precomp_avg_sub_landed_per_min_differential',
-'precomp_avg_total_sub_absorbed_differential',
-'precomp_avg_knockdowns_differential',
-'precomp_avg_reversals_differential',
-'precomp_win_streak_differential',
-'precomp_avg_sub_absorbed_differential',
-'precomp_sub_attempts_per_min_differential',
-'precomp_lose_streak_differential',
-'precomp_takedowns_absorbed_differential',
-'precomp_KO_losses_differential',
-'precomp_sub_def_differential',
-'precomp_total_sub_absorbed_differential',
-'precomp_sub_landed_per_min_differential',
-'precomp_knockdowns_differential',
-'precomp_reversals_differential',
-'precomp_sub_absorbed_differential',
-'precomp_comp_time_differential',
-'precomp_avg_comp_time_differential',
-...+40
+... +100
 
 ________________________________________________________________________________________________________________
 
@@ -169,5 +109,7 @@ PREDICTING A NOVEL HYPOTHETICAL FIGHT BETWEEN 2 FIGHTERS
 This program then takes 2 fighter input names, and averages & standardizes both of their career stats for each of the relevant attributes that the ML model is learning from. The availablity & symmetry of these relevant fighter stats are crucial for how the attributes were originally chosen for the machine learning step, thus permitting a flexible way to compare 2 fighters. 
 Each model is then able to take this 2-fighter input and attempts to predict and display the winner of their hypothetical fight, along with the level of certainty with its prediction.  
 
+
+![image](https://github.com/RidwanSharkar/Predictive-Analysis-of-MMA-Fights/assets/158855066/72453e23-83fc-49ce-9ce7-d251904e86c2)
 
 
