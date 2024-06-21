@@ -1,4 +1,4 @@
-![image](https://github.com/RidwanSharkar/Predictive-Analysis-of-MMA-Fights/assets/158855066/2691816a-f74d-44d2-9301-24eed4981466)**Predictive Analysis of Fight Outcomes in Mixed Martial Arts Using Machine Learning**
+**Predictive Analysis of Fight Outcomes in Mixed Martial Arts Using Machine Learning**
 ________________________________________________________________________________________________________________
 
 OVERVIEW:
