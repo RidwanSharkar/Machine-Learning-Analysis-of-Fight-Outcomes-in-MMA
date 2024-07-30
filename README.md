@@ -11,7 +11,7 @@ ________________________________________________________________________________
 
 ASSIGNING ATTRIBUTE WEIGHTS DETERMINANT TO FIGHT OUTCOME
 
-Data set taken from (https://www.kaggle.com/datasets/danmcinerney/mma-differentials-and-elo {masterMLpublic.csv}) contains comprehensive historical fight data scraped from the official ufcstats.com. For each fight (row), attributes (columns) such as 'age', 'reach', 'height', 'significant strikes landed', 'knockdowns', 'submission attempts', 'reversals', 'control time', 'takedowns attempted', and 'time since last competition' are recorded. Differential calculations are performed on these attributes between the fighter and their opponent, revealing more valuable & relevant metrics, which are then suitable to be fed through various Machine Learning algorithms:
+Data set taken from (https://www.kaggle.com/datasets/danmcinerney/mma-differentials-and-elo {masterMLpublic.csv}) contains comprehensive historical fight data scraped from the official ufcstats.com. For each fight (row), attributes (columns) such as 'age', 'reach', 'height', 'significant strikes landed', 'knockdowns', 'submission attempts', 'reversals', 'control time', 'takedowns attempted', and 'time since last competition' are recorded. Differential calculations are performed on these attributes between the fighter and their opponent, which are then suitable to be fed through various Machine Learning algorithms:
 
 ________________________________________________________________________________________________________________
 
@@ -110,6 +110,7 @@ This program then takes 2 fighter input names, and averages & standardizes both 
 Each model is then able to take this 2-fighter input and attempts to predict and display the winner of their hypothetical fight, along with the level of certainty with its prediction.  
 
 
-![image](https://github.com/RidwanSharkar/Predictive-Analysis-of-MMA-Fights/assets/158855066/72453e23-83fc-49ce-9ce7-d251904e86c2)
+![image](https://github.com/user-attachments/assets/52cefd71-831f-4503-a6da-a8ef694c9040)
+
 
 
