@@ -15,140 +15,68 @@ Data set taken from (https://www.kaggle.com/datasets/danmcinerney/mma-differenti
 
 ________________________________________________________________________________________________________________
 
-• 'age_differential',
-
-• 'height_differential',
-
-• 'days_since_last_comp_differential',
-
-• 'reach_differential',
-
-• 'avg_head_strikes_absorbed_differential',
-
-• 'total_comp_time_differential',
-
-• 'avg_takedowns_def_differential',
-
-• 'avg_distance_strikes_def_differential',
-
-• 'avg_sig_strikes_absorbed_differential',
-
-• 'avg_control_differential',
-
-• 'avg_total_strikes_absorbed_differential',
-
-• 'avg_takedowns_attempts_per_min_differential',
-
-• 'win_loss_ratio_differential',
-
-• 'avg_distance_strikes_absorbed_differential',
-
-• 'avg_body_strikes_def_differential',
-
-• 'avg_stamina_differential',
-
-• 'avg_ground_strikes_def_differential',
-
-• 'total_strikes_def_differential',
-
-• 'avg_ground_strikes_attempts_per_min_differential',
-
-• 'avg_clinch_strikes_def_differential',
-
-• 'avg_clinch_strikes_attempts_per_min_differential',
-
-• 'avg_head_strikes_attempts_differential',
-
-• 'avg_head_strikes_landed_per_min_differential',
-
-• 'avg_total_strikes_def_differential',
-
-• 'avg_leg_strikes_def_differential',
-
-• 'distance_strikes_def_differential',
-
-• 'avg_ground_strikes_landed_per_min_differential',
-
-• 'avg_clinch_strikes_landed_per_min_differential',
-
-• 'head_strikes_def_differential',
-
-• 'avg_sig_strikes_def_differential',
-
-• 'sig_strikes_def_differential',
-
-• 'avg_leg_strikes_attempts_per_min_differential',
-
-• 'avg_head_strikes_def_differential',
-
-• 'control_differential',
-
-• 'avg_total_comp_time_differential',
-
-• 'avg_total_distance_strikes_absorbed_differential',
-
-• 'avg_ground_strikes_absorbed_differential',
-
-• 'avg_body_strikes_attempts_per_min_differential',
-
-• 'head_strikes_landed_per_min_differential',
-
-• 'clinch_strikes_attempts_per_min_differential',
-
-• 'avg_distance_strikes_attempts_per_min_differential',
-
-• 'avg_clinch_strikes_absorbed_differential',
-
-• 'num_fights_differential',
-
-• 'avg_head_strikes_attempts_per_min_differential',
-
-• 'avg_body_strikes_landed_per_min_differential',
-
-• 'avg_total_body_strikes_absorbed_differential',
-
-• 'avg_leg_strikes_landed_per_min_differential',
-
-• 'body_strikes_def_differential',
-
-• 'avg_takedowns_landed_per_min_differential',
-
-• 'total_distance_strikes_absorbed_differential',
-
-• 'avg_body_strikes_absorbed_differential',
-
-• 'avg_total_clinch_strikes_absorbed_differential',
-
-• 'avg_total_strikes_attempts_per_min_differential',
-
-• 'avg_leg_strikes_absorbed_differential',
-
-• 'avg_num_fights_differential',
-
-• 'body_strikes_landed_per_min_differential',
-
-• 'avg_distance_strikes_landed_per_min_differential',
-
-• 'body_strikes_attempts_per_min_differential',
-
-• 'distance_strikes_attempts_per_min_differential',
-
-• 'avg_total_head_strikes_absorbed_differential',
-
-• 'head_strikes_attempts_per_min_differential',
-
-• 'total_head_strikes_absorbed_differential',
-
-• 'avg_total_strikes_landed_per_min_differential',
-
-• 'head_strikes_absorbed_differential',
-
-• 'total_clinch_strikes_absorbed_differential',
-
-• 'avg_sub_attempts_per_min_differential',
-
-• 'total_sig_strikes_absorbed_differential',
-
+• 'age_differential'<br>
+• 'height_differential'<br>
+• 'days_since_last_comp_differential'<br>
+• 'reach_differential'<br>
+• 'avg_head_strikes_absorbed_differential'<br>
+• 'total_comp_time_differential'<br>
+• 'avg_takedowns_def_differential'<br>
+• 'avg_distance_strikes_def_differential'<br>
+• 'avg_sig_strikes_absorbed_differential'<br>
+• 'avg_control_differential'<br>
+• 'avg_total_strikes_absorbed_differential'<br>
+• 'avg_takedowns_attempts_per_min_differential'<br>
+• 'win_loss_ratio_differential'<br>
+• 'avg_distance_strikes_absorbed_differential'<br>
+• 'avg_body_strikes_def_differential'<br>
+• 'avg_stamina_differential'<br>
+• 'avg_ground_strikes_def_differential'<br>
+• 'total_strikes_def_differential'<br>
+• 'avg_ground_strikes_attempts_per_min_differential'<br>
+• 'avg_clinch_strikes_def_differential'<br>
+• 'avg_clinch_strikes_attempts_per_min_differential'<br>
+• 'avg_head_strikes_attempts_differential'<br>
+• 'avg_head_strikes_landed_per_min_differential'<br>
+• 'avg_total_strikes_def_differential'<br>
+• 'avg_leg_strikes_def_differential'<br>
+• 'distance_strikes_def_differential'<br>
+• 'avg_ground_strikes_landed_per_min_differential'<br>
+• 'avg_clinch_strikes_landed_per_min_differential'<br>
+• 'head_strikes_def_differential'<br>
+• 'avg_sig_strikes_def_differential'<br>
+• 'sig_strikes_def_differential'<br>
+• 'avg_leg_strikes_attempts_per_min_differential'<br>
+• 'avg_head_strikes_def_differential'<br>
+• 'control_differential'<br>
+• 'avg_total_comp_time_differential'<br>
+• 'avg_total_distance_strikes_absorbed_differential'<br>
+• 'avg_ground_strikes_absorbed_differential'<br>
+• 'avg_body_strikes_attempts_per_min_differential'<br>
+• 'head_strikes_landed_per_min_differential'<br>
+• 'clinch_strikes_attempts_per_min_differential'<br>
+• 'avg_distance_strikes_attempts_per_min_differential'<br>
+• 'avg_clinch_strikes_absorbed_differential'<br>
+• 'num_fights_differential'<br>
+• 'avg_head_strikes_attempts_per_min_differential'<br>
+• 'avg_body_strikes_landed_per_min_differential'<br>
+• 'avg_total_body_strikes_absorbed_differential'<br>
+• 'avg_leg_strikes_landed_per_min_differential'<br>
+• 'body_strikes_def_differential'<br>
+• 'avg_takedowns_landed_per_min_differential'<br>
+• 'avg_body_strikes_absorbed_differential'<br>
+• 'avg_total_clinch_strikes_absorbed_differential'<br>
+• 'avg_total_strikes_attempts_per_min_differential'<br>
+• 'avg_leg_strikes_absorbed_differential'<br>
+• 'avg_num_fights_differential'<br>
+• 'body_strikes_landed_per_min_differential'<br>
+• 'avg_distance_strikes_landed_per_min_differential'<br>
+• 'body_strikes_attempts_per_min_differential'<br>
+• 'distance_strikes_attempts_per_min_differential'<br>
+• 'avg_total_head_strikes_absorbed_differential'<br>
+• 'head_strikes_attempts_per_min_differential'<br>
+• 'head_strikes_absorbed_differential',<br>
+• 'avg_sub_attempts_per_min_differential',<br>
 • ... +100
 
 ________________________________________________________________________________________________________________
