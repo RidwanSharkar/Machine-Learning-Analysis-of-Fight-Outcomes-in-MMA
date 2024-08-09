@@ -1,13 +1,13 @@
 **Predictive Analysis of Fight Outcomes in Mixed Martial Arts Using Machine Learning**
 ________________________________________________________________________________________________________________
 
-OVERVIEW:
+**OVERVIEW:**
 
 This project attempts to predict the outcomes of MMA fights based on a diverse set of attributes sourced from historical fight data, consisting of fighter statistics, historical performance, physical attributes, and fighting styles to train multiple ML models. The goal is to see if an accurate prediction of a novel fight can be determined from a vast set of fighter attributes. 
 
 ________________________________________________________________________________________________________________
 
-[IMPLEMENTATION 1]
+**[IMPLEMENTATION 1]**
 
 ASSIGNING ATTRIBUTE WEIGHTS DETERMINANT TO FIGHT OUTCOME
 
@@ -97,7 +97,7 @@ Results and discrepencies between how these these ML models assigned their weigh
 
 ________________________________________________________________________________________________________________
 
-[IMPLEMENTATION 2]
+**[IMPLEMENTATION 2]**
 
 PREDICTING A NOVEL HYPOTHETICAL FIGHT BETWEEN 2 FIGHTERS
 
