@@ -11,7 +11,7 @@ ________________________________________________________________________________
 
 ASSIGNING ATTRIBUTE WEIGHTS DETERMINANT TO FIGHT OUTCOME
 
-Data set taken from (https://www.kaggle.com/datasets/danmcinerney/mma-differentials-and-elo {masterMLpublic.csv}) contains comprehensive historical fight data scraped from the official ufcstats.com. For each fight (row), the result & attributes (columns) such as 'age', 'reach', 'height', 'significant strikes landed', 'knockdowns', 'submission attempts' are recorded for both fighters. Differential calculations are performed on these attributes between the fighter and their opponent, which are then suitable to be fed through various Machine Learning algorithms:
+Data set taken from (https://www.kaggle.com/datasets/danmcinerney/mma-differentials-and-elo {masterMLpublic.csv}) contains comprehensive historical fight data scraped from the official ufcstats.com. For each fight (row), the result & attributes (columns) such as 'age', 'reach', 'height', 'significant strikes landed', 'knockdowns', 'submission attempts' are recorded for both fighters. Differential calculations are performed on these attributes between the fighter and their opponent, which are then suitable to be fed through various Machine Learning algorithms (Random Forest, Gradient Boosting Classifier, Support Vector Machine, K-Neighbors Classifier) to assign weights to the above attributes WRT predicting the outcome of a fight ('result' column). Results and discrepencies between how these these ML models assigned their weights are described in "Attribute Weights for Predicting Fight Outcome by Machine Learning Model.pdf"
 
 ________________________________________________________________________________________________________________
 
@@ -81,25 +81,9 @@ ________________________________________________________________________________
 
 ________________________________________________________________________________________________________________
 
-The following Machine Learning Models are then used to assign weights to the above attributes WRT predicting the outcome of a fight ('result' column):
-
-1) Random Forest Classifier
-2) Gradient Boosting Classifier
-3) Support Vector Machine
-4) Logistic Regression
-5) K-Neighbors Classifier
-6) Neural MLP Classifier
-7) Decision Tree Classifier
-
-Results and discrepencies between how these these ML models assigned their weights are described in: 
-
-"Attribute Weights for Predicting Fight Outcome by Machine Learning Model.pdf" attached
-
-________________________________________________________________________________________________________________
-
 **[IMPLEMENTATION 2]**
 
-PREDICTING A NOVEL HYPOTHETICAL FIGHT BETWEEN 2 FIGHTERS
+PREDICTING A NOVEL FIGHT BETWEEN 2 MMA ATHLETHES
 
 This program then takes 2 fighter input names, and averages & standardizes both of their career stats for each of the relevant attributes that the ML model is learning from. The availablity & symmetry of these relevant fighter stats are crucial for how the attributes were originally chosen, permitting a flexible way to compare 2 fighters. 
 Each model is then able to take this 2-fighter input and attempts to predict and display the winner of their hypothetical fight, along with the level of certainty with its prediction.  
