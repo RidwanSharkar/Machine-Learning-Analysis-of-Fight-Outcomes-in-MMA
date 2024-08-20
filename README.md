@@ -11,7 +11,9 @@ ________________________________________________________________________________
 
 ASSIGNING ATTRIBUTE WEIGHTS DETERMINANT TO FIGHT OUTCOME
 
-Data set taken from (https://www.kaggle.com/datasets/danmcinerney/mma-differentials-and-elo {masterMLpublic.csv}) contains comprehensive historical fight data scraped from the official ufcstats.com. For each fight (row), the result & attributes (columns) such as 'age', 'reach', 'height', 'significant strikes landed', 'knockdowns', 'submission attempts' are recorded for both fighters. Differential calculations are performed on these attributes between the fighter and their opponent, which are then suitable to be fed through various Machine Learning algorithms (Random Forest, Gradient Boosting Classifier, Support Vector Machine, K-Neighbors Classifier) to assign weights to the above attributes WRT predicting the outcome of a fight ('result' column). Results and discrepencies between how these these ML models assigned their weights are described in "Attribute Weights for Predicting Fight Outcome by Machine Learning Model.pdf"
+Data set taken from (https://www.kaggle.com/datasets/danmcinerney/mma-differentials-and-elo {masterMLpublic.csv}) contains comprehensive historical fight data scraped from the official ufcstats.com. For each fight (row), the result & attributes (columns) such as 'age', 'reach', 'height', 'significant strikes landed', 'knockdowns', 'submission attempts' are recorded for both fighters. 
+
+Differential calculations are performed on these attributes between the fighter and their opponent, which are then suitable to be fed through various Machine Learning algorithms (Random Forest, Gradient Boosting Classifier, Support Vector Machine, K-Neighbors Classifier) to assign weights to the above attributes WRT predicting the outcome of a fight ('result' column). Feature Importances and discrepencies between the ML models are described in "Attribute Weights for Predicting Fight Outcome by Machine Learning Model.pdf"
 
 ________________________________________________________________________________________________________________
 
