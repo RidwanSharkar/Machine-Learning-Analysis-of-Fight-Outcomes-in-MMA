@@ -5,7 +5,7 @@
 This project attempts to predict the outcomes of MMA fights based on a diverse set of attributes sourced from historical fight data, consisting of fighter statistics, historical performance, physical attributes, and fighting styles to train multiple ML models. The goal is to see if an accurate prediction of a novel fight can be determined from a vast set of fighter attributes. 
 
 
-## Implementation 1: Assigning Attribute Weights Determinant to Fight Outcome
+## Implementation 1: Assigning Attribute Weights
 
 Data set taken from (https://www.kaggle.com/datasets/danmcinerney/mma-differentials-and-elo {masterMLpublic.csv}) contains comprehensive historical fight data scraped from the official ufcstats.com. For each fight (row), the result & attributes (columns) such as 'age', 'reach', 'height', 'significant strikes landed', 'knockdowns', 'submission attempts' are recorded for both fighters. 
 
