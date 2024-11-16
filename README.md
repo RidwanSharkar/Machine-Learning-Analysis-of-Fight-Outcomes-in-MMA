@@ -1,19 +1,15 @@
-**Predictive Analysis of Fight Outcomes in Mixed Martial Arts Using Machine Learning**
-________________________________________________________________________________________________________________
+# Predictive Analysis of Fight Outcomes in Mixed Martial Arts Using Machine Learning
 
-**OVERVIEW:**
+## Overview:
 
 This project attempts to predict the outcomes of MMA fights based on a diverse set of attributes sourced from historical fight data, consisting of fighter statistics, historical performance, physical attributes, and fighting styles to train multiple ML models. The goal is to see if an accurate prediction of a novel fight can be determined from a vast set of fighter attributes. 
 
-________________________________________________________________________________________________________________
 
-**[IMPLEMENTATION 1]** - Assigning Attribute Weights Determinant to Fight Outcome
+## Implementation 1: Assigning Attribute Weights Determinant to Fight Outcome
 
 Data set taken from (https://www.kaggle.com/datasets/danmcinerney/mma-differentials-and-elo {masterMLpublic.csv}) contains comprehensive historical fight data scraped from the official ufcstats.com. For each fight (row), the result & attributes (columns) such as 'age', 'reach', 'height', 'significant strikes landed', 'knockdowns', 'submission attempts' are recorded for both fighters. 
 
 Differential calculations are performed on these attributes between the fighter and their opponent, which are then suitable to be fed through various Machine Learning algorithms (Random Forest, Gradient Boosting Classifier, Support Vector Machine, K-Neighbors Classifier) to assign weights to the above attributes WRT predicting the outcome of a fight ('result' column). Feature Importances and discrepencies between the ML models are described in "Attribute Weights for Predicting Fight Outcome by Machine Learning Model.pdf"
-
-________________________________________________________________________________________________________________
 
 • 'age_differential'<br>
 • 'height_differential'<br>
@@ -79,15 +75,12 @@ ________________________________________________________________________________
 • 'avg_sub_attempts_per_min_differential',<br>
 • ... +100
 
-________________________________________________________________________________________________________________
 
-**[IMPLEMENTATION 2]** - Predicting a Novel Fight Between 2 MMA Athletes
+## Implementation 2: Predicting a Novel Fight Between 2 MMA Athletes
 
 This program then takes 2 fighter input names, and averages & standardizes both of their career stats for each of the relevant attributes that the ML model is learning from. The availablity & symmetry of these relevant fighter stats are crucial for how the attributes were originally chosen, permitting a flexible way to compare 2 fighters. 
 Each model is then able to take this 2-fighter input and attempts to predict and display the winner of their hypothetical fight, along with the level of certainty with its prediction.  
 
 
 ![image](https://github.com/user-attachments/assets/52cefd71-831f-4503-a6da-a8ef694c9040)
-
-
 
